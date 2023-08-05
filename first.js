@@ -23,6 +23,7 @@ if(arrayNumber.indexOf(53) !== -1){
    
     return arrayNumber;
 }
+// array concat -----
 const oddArray = [54, 45, 85, 52, 80, 87]
 const fullArray = arrayNumber.concat(oddArray);
 console.log(fullArray)
