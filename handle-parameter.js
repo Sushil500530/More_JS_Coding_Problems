@@ -16,7 +16,7 @@ const output = multiply(16 + 4, 4);
 // console.log(output);
 const nayok = ["bangla bhia", "english bhai", "tamil bhai", "china bhai"];
 for (const nayoks of nayok) {
-  // console.log(nayoks)
+  console.log(nayoks)
 }
 let sum = 0;
 for (let i = 0; i <= 3; i++) {

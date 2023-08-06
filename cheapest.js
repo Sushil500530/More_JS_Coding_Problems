@@ -1,3 +1,4 @@
+// low cost show phone use function 
 const phones = [
     { name: 'Sumsung', camra: 12, storage: '32gb', price: 36000, color: 'silver'},
     { name: 'Walton', camra: 7, storage: '32gb', price: 22000, color: 'silver'},
@@ -9,19 +10,36 @@ const phones = [
 ]
 // console.log(phones)
 // lowest price check in phones 
-function cheapestPhone(taka){
-    let cheapest = taka[0];
-    for(let i = 0; i <= taka.length-1; i++){
-        const phone = taka[i];
-        // console.log(Phone)
-        if(phone.price < cheapest.price){
-            cheapest = phone;
+
+// function cheapestPhone(taka){
+//     let cheapest = taka[0];
+//     for(let i = 0; i <= taka.length-1; i++){
+//         const phone = taka[i];
+//         // console.log(Phone)
+//         if(phone.price < cheapest.price){
+//             cheapest = phone;
+//         }
+//     }
+//     return cheapest;
+// }
+// const lowestPrice = cheapestPhone(phones);
+// console.log(lowestPrice);
+
+// used for of loop 
+function lowCostPhone(price){
+    let lowestPrice = price[0];
+    for(let phonePrice of price){
+        let phone = phonePrice;
+        // console.log(phone)
+        if( phone.price < lowestPrice.price){
+            lowestPrice = phone;
         }
     }
-    return cheapest;
+    return lowestPrice;
 }
-const lowestPrice = cheapestPhone(phones);
-console.log(lowestPrice);
+const lowestCostPhonePrice = lowCostPhone(phones);
+console.log(lowestCostPhonePrice)
+
 //  lowest camras px in the phones 
 // function cheapestPhone(taka){
 //     let cheapest = taka[0];
@@ -36,3 +54,4 @@ console.log(lowestPrice);
 // }
 // const lowestPrice = cheapestPhone(phones);
 // console.log(lowestPrice);
+
