@@ -16,7 +16,6 @@ const inchesNumber = 152;
 const inchesResult = inchesToFeet(inchesNumber);
 console.log(inchesNumber,'iches is', inchesResult, 'feet')
 
-
 // centimeter to meter convert 
 function centimeterToMeter(centimeter){
     const meter = centimeter / 100;
@@ -26,7 +25,6 @@ const cm = 500;
 const meterResult = centimeterToMeter(cm);
 console.log(cm, 'cm is', meterResult, 'meter')
 
-
 //  counter paper of some book  page 
 function paperRequirments(book1, book2, book3){
     const perBook1 = 100 * book1;
@@ -34,12 +32,11 @@ function paperRequirments(book1, book2, book3){
     const perBook3 = 300 * book3;
     const totalPaper = perBook1 + perBook2 + perBook3;
     return totalPaper
-   
 }
 const totalBookPage =paperRequirments(2, 4, 3) ;
 console.log('Total book page is :', totalBookPage)
 
-
+// array er moddhe j nam ta boro take return korbe
 function bestFriend(friends){
     let bestu ='';
     for(let friend of friends){
@@ -55,7 +52,7 @@ const friends = ['sajid', 'mamun', 'kamal', 'jubauer bin rased', 'chanku'];
 const bestFriendName = bestFriend(friends);
 console.log('My Best Friend Name :', bestFriendName)
 
-
+// akti array er  moddhe onek gulo songkha thakle tar moddhe negetive number pele break hoye jabe
 
 function removeReverse(numbers){
     for(let reverse of numbers){
